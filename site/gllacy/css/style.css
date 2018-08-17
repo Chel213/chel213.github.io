@@ -1478,7 +1478,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   font-weight: 500;
   color: #ffffff;
   background: rgba(248, 247, 244, 0.2) url(../img/select-down.svg) no-repeat 168px 50%;
-  border: none;
   cursor: pointer;
 }
 .filter-popular select:hover,
