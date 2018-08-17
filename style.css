@@ -1,0 +1,128 @@
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  font-display: swap;
+  src: url("fonts/opensans.woff2"),
+    url("fonts/opensans.woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  font-display: swap;
+  src: url("fonts/opensansbold.woff2"),
+    url("fonts/opensansbold.woff");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.item:nth-child(2n) .item__img {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.item__title {
+  width: 100%;
+  font-size: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__stack-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.item__stack {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color:rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+.item__browser-support {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.item__browser-support img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.item__button {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 5px 15px;
+  text-decoration: none;
+  background-image: linear-gradient(180deg, rgba(62, 246, 248, 1), rgba(211, 248, 248, 1));
+  border-radius: 16px;
+  box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.3);
+}
+
+.item__button:hover {
+  box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.8);
+}
+
+.item__button:active {
+  box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.item__img {
+  margin-left: auto;
+  transform: scale(1);
+  transition-duration: 0.4s;
+}
+
+.item__img img{
+  display: block;
+}
+
+.item__img:hover {
+  box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+  transition-duration: 0.4s;
+}
+
